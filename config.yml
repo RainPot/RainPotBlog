@@ -22,12 +22,15 @@ menu:
     - name: Home
       url: /
       weight: 1
+    - name: Articles
+      url: /blog/
+      weight: 2
     - name: About
       url: /about
-      weight: 2
-    - name: Subscribe
-      url: /index.xml
       weight: 3
+    - name: Subscribe
+      url: https://github.com/RainPot
+      weight: 4
 
 # You can add languages!
 # do not expect it to work out of the box
@@ -37,9 +40,9 @@ languages:
   en:
     LanguageName: English
     # contentDir: content/english
-  ru:
-    LanguageName: русский
-    # contentDir: content/russian
+  # ru:
+  #   LanguageName: русский
+  #   # contentDir: content/russian
 
 params:
   sitename: "RainPot Blog"
