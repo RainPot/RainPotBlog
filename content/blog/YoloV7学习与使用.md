@@ -11,8 +11,10 @@ description: "简单介绍YoloV7原理及使用"
 ---
 
 ## 1.YoloV7
-论文名称：《YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors》
-论文地址： https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2207.02696.pdf
+论文名称：《YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors》 
+
+论文地址： https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2207.02696.pdf 
+
 论文代码： https://link.zhihu.com/?target=https%3A//github.com/WongKinYiu/yolov7
 
 YoloV7是由YoloV4团队提出的检测器，目前在速度与精度上有不小的优势。作者称YOLOv7 在 5 FPS 到 160 FPS 范围内，速度和精度都超过了所有已知的目标检测器，并在 GPU V100 上，30 FPS 的情况下达到实时目标检测器的最高精度 56.8% AP。
@@ -26,7 +28,9 @@ YoloV7是由YoloV4团队提出的检测器，目前在速度与精度上有不�
 
 #### 2.ELAN ELAN-W E-ELAN
 对于ELAN，可通过下面这个博客进行了解：[理解Yolov7使用的ELAN](https://zhuanlan.zhihu.com/p/598642990)，目标是为了从梯度路径层面优化模型效果。 
+
 ELAN-W模块，与ELAN所略有不同的是它在第二条分支的时候选取的输出数量不同。 
+
 E-ELAN，其主要架构如下图所示。在大规模ELAN中，无论梯度路径长度和计算模块数量如何，都达到了稳定的状态。但如果更多计算模块被无限地堆叠，这种稳定状态可能会被破坏，参数利用率也会降低。本文提出的E-ELAN采用expand、shuffle、merge cardinality结构，实现在不破坏原始梯度路径的情况下，提高网络的学习能力。
 ![](/images/yolov7-3.png)
 
