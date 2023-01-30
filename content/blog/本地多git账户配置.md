@@ -1,6 +1,6 @@
 ---
 title: "本地多Git账户配置"
-date: "2022-01-14"
+date: "2023-01-14"
 menu: "main"
 description: "本地多git账户管理"
 ---

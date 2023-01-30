@@ -2,7 +2,7 @@
 
 title: "简单介绍YoloV7原理及使用"
 
-date: "2022-01-15"
+date: "2023-01-15"
 
 menu: "main"
 
@@ -13,18 +13,19 @@ description: "简单介绍YoloV7原理及使用"
 ## 1.YoloV7
 论文名称：《YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors》 
 
-论文地址： https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2207.02696.pdf 
+论文地址： https://arxiv.org/pdf/2207.02696.pdf
 
-论文代码： https://link.zhihu.com/?target=https%3A//github.com/WongKinYiu/yolov7
+论文代码： https://github.com/WongKinYiu/yolov7
 
 YoloV7是由YoloV4团队提出的检测器，目前在速度与精度上有不小的优势。作者称YOLOv7 在 5 FPS 到 160 FPS 范围内，速度和精度都超过了所有已知的目标检测器，并在 GPU V100 上，30 FPS 的情况下达到实时目标检测器的最高精度 56.8% AP。
 整体模型如下图：
-![](/images/yolov7-1.png)
+<center><img src="/images/yolov7-1.png" width="60%" height="50%" /></center>
 
 ## 2.改进点
 #### 1.Model re-parametrization techniques(重参化技术)
 **对应架构图当中的REP模块**。我们可通过[RepVGG: make VGG great again!](https://zhuanlan.zhihu.com/p/344324470)来快速理解什么为重参化技术。浅显地总结下：对于一个多分支block，可通过一定的方式将多分支合并为单分支，减少参数量同时提升效果。在RepVGG中，RepConv定义如下图，总结下就是一个3x3卷积 一个1x1卷积和一个恒等映射，可以压缩为一个单一的3x3卷积：
-![](/images/yolov7-2.png)
+<center><img src="/images/yolov7-2.png" width="50%" height="50%" /></center>
+
 
 #### 2.ELAN ELAN-W E-ELAN
 对于ELAN，可通过下面这个博客进行了解：[理解Yolov7使用的ELAN](https://zhuanlan.zhihu.com/p/598642990)，目标是为了从梯度路径层面优化模型效果。 
@@ -54,21 +55,24 @@ E-ELAN，其主要架构如下图所示。在大规模ELAN中，无论梯度路�
 ## 3.实验
 #### 消融实验
 模型缩放：
-![](/images/yolov7-6.png)
+<center><img src="/images/yolov7-6.png" width="40%" height="40%" /></center> 
+
 RepConv：
-![](/images/yolov7-7.png)
+<center><img src="/images/yolov7-7.png" width="40%" height="40%" /></center> 
+
 RepResidual：
-![](/images/yolov7-8.png)
+<center><img src="/images/yolov7-8.png" width="40%" height="40%" /></center> 
+
 辅助头：
-![](/images/yolov7-9.png)
+<center><img src="/images/yolov7-9.png" width="40%" height="40%" /></center>
 
 #### baseline对比
-![](/images/yolov7-10.png)
+<center><img src="/images/yolov7-10.png" width="70%" height="70%" /></center>
 
 
 ## 4.训练
 #### 1.数据集结构：
-![](/images/yolov7-11.png)
+<center><img src="/images/yolov7-11.png" width="40%" height="40%" /></center>
 
 #### 2.coco 数据集 格式
 https://blog.csdn.net/weixin_44326452/article/details/122674257
@@ -110,5 +114,5 @@ python3 train.py --weights yolov7_training.pt --cfg cfg/training/yolov7-gnan.yam
 ```
 #### 5.查看结果
 yolov7会自动生成完备的训练结果，在/runs/train/下。
-![](/images/yolov7-14.png)
-![](/images/yolov7-15.png)
+<center><img src="/images/yolov7-14.png" width="30%" height="30%" /></center>
+<center><img src="/images/yolov7-15.png" width="70%" height="70%" /></center>
