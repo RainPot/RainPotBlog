@@ -1,14 +1,17 @@
----
 
-title: "简单介绍YoloV7原理及使用"
-
-date: "2023-01-15"
-
-menu: "main"
-
-description: "简单介绍YoloV7原理及使用"
-
----
++++
+author = "Cynicsss"
+title = "简单介绍YoloV7原理及使用"
+date = "2023-01-15"
+description = "简单介绍YoloV7原理及使用"
+tags = [
+]
+categories = [
+    "",
+]
+series = ["Themes Guide"]
+aliases = [""]
++++
 
 ## 1.YoloV7
 论文名称：《YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors》 

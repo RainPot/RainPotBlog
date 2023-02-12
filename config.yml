@@ -62,7 +62,7 @@ params:
   # link to more projects
   # show your github repositories as example
   # or create your own page.
-  projectsURL: https://example.com
+  projectsURL: https://rainpot.github.io/
 
   # a brief about me
   brief_about: <center>不吃夜宵，从我做起 ❤️️</center>
@@ -70,5 +70,7 @@ params:
   # articles archive url (default)
   archive: blog
 
+# discus
+DisqusShortname: RainPot
 # and don't forget
 theme: kaslaanka

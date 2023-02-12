@@ -1,9 +1,17 @@
----
-title: "本地多Git账户配置"
-date: "2023-01-14"
-menu: "main"
-description: "本地多git账户管理"
----
++++
+author = "Cynicsss"
+title = "本地多Git账户配置"
+date = "2023-01-14"
+description = ""
+tags = [
+]
+categories = [
+    "",
+]
+series = ["Themes Guide"]
+aliases = [""]
++++
+
 ## 1.多git需求
 大部分人会有本地多git账号需求，用来管理不同git归属仓库(如公司/学校/github等代码托管平台)，简单记录下配置过程。
 
