@@ -3,6 +3,7 @@ author = "Cynicsss"
 title = "本地多Git账户配置"
 date = "2023-01-14"
 description = ""
+readingtime = 5
 tags = [
 ]
 categories = [

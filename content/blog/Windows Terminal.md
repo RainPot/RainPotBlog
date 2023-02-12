@@ -3,6 +3,7 @@ author = "Cynicsss"
 title = "Windows Terminal"
 date = "2020-06-21"
 description = "WT"
+readingtime = 5
 tags = [
 ]
 categories = [

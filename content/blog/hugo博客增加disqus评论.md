@@ -6,6 +6,8 @@ title = "hugo博客增加disqus评论"
 
 date = "2023-02-12"
 
+readingtime = 7
+
 description = ""
 
 tags = [

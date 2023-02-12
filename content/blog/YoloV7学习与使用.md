@@ -4,6 +4,7 @@ author = "Cynicsss"
 title = "简单介绍YoloV7原理及使用"
 date = "2023-01-15"
 description = "简单介绍YoloV7原理及使用"
+readingtime = 15
 tags = [
 ]
 categories = [

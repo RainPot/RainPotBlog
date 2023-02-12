@@ -22,7 +22,7 @@
 	    {{ .Date.Format (.Site.Params.dateform | default "2006-01-02") }}
 	  </span>
 	  <span class="reading-time middot meta-data">
-	    {{ .ReadingTime }} min read
+	    {{ .Params.readingtime }} min read
 	  </span>
 	  {{ if .Params.unlisted }}
 	  <span class="middot meta-data">
