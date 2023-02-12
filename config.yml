@@ -71,6 +71,6 @@ params:
   archive: blog
 
 # discus
-DisqusShortname: RainPot
+DisqusShortname: rainpot
 # and don't forget
 theme: kaslaanka
