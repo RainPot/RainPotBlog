@@ -2,11 +2,11 @@
 
 author = "Cynicsss"
 
-title = "QTypist论文阅读"
+title = "QTypist论文笔记"
 
 date = "2023-02-14"
 
-readingtime = 7
+readingtime = 15
 
 description = ""
 
