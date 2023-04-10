@@ -14,7 +14,18 @@ aliases = [""]
 +++
 
 
-[TOC]
+- [1.安装](#1安装)
+- [2.环境配置](#2环境配置)
+- [3.简单LLM预测](#3简单llm预测)
+- [4.Prompt Templates](#4prompt-templates)
+    - [4.1 简单示例：](#41-简单示例)
+    - [4.2 多个可变参数示例：](#42-多个可变参数示例)
+    - [4.3 从LangChainHub获取现成的promtps：](#43-从langchainhub获取现成的promtps)
+    - [4.4 fewshot prompt template](#44-fewshot-prompt-template)
+    - [4.5 partial prompt template](#45-partial-prompt-template)
+    - [4.6 序列化我们的prompts](#46-序列化我们的prompts)
+    - [4.7 Output Parsers](#47-output-parsers)
+
 
 ## 1.安装
 ```
