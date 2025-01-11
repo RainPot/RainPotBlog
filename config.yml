@@ -25,15 +25,12 @@ menu:
     - name: Articles
       url: /blog/
       weight: 2
-    - name: Reflection
-      url: /reflection/
-      weight: 3
     - name: About
       url: /about
-      weight: 4
+      weight: 3
     - name: Subscribe
       url: https://github.com/RainPot
-      weight: 5
+      weight: 4
 
 # You can add languages!
 # do not expect it to work out of the box
